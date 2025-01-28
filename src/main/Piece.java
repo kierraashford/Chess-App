@@ -11,6 +11,19 @@ public abstract class Piece{
 	}
 	
 	public PieceColor getColor() {
+		return color;
+	}
+	public Position getPosition() {
+		return position; 
+	}
+	
+	public void setPosition(Position position) {
+		this.position = position;
+	}
+	
+	public abstract boolean isValidMove(Position newPosition, Piece[][] board); 
 		
 	}
-}
+
+
+ 
